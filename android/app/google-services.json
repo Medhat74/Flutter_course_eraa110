@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1096961013259",
+    "project_id": "erra-soft",
+    "storage_bucket": "erra-soft.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096961013259:android:bca674ac7ac3308f13b90e",
+        "android_client_info": {
+          "package_name": "com.example.firebase_session"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_yhRw1mxhSGgA7p64sRTj2tPBtlDhO-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
