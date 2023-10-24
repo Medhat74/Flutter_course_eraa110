@@ -1,4 +1,6 @@
 import 'package:firebase_session/blocs/auth_cubit/auth_cubit.dart';
+import 'package:firebase_session/screens/chat_screen.dart';
+import 'package:firebase_session/screens/message_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -44,9 +46,10 @@ class HomeScreen extends StatelessWidget {
               ElevatedButton(
                 onPressed: (){
                   if(context.read<AuthCubit>().formKey.currentState!.validate()) {
-                    context.read<AuthCubit>().createUser(
+                    context.read<AuthCubit>().loginUser(
                         context.read<AuthCubit>().emailController.text,
                         context.read<AuthCubit>().passwordController.text);
+                    Navigator.push(context, MaterialPageRoute(builder: (BuildContext b) =>  MessageScreen()));
                   }
                 },
                 child: const Text("Create User"),
